@@ -1,9 +1,14 @@
 import React from 'react';
-import { Text } from 'react-native';
-import BottomNavigator from './BottomNavigator';
+import { View, Button, Text } from 'react-native';
 
-const Home = () => (
-        <Text>This is home</Text>
+const Home = ({navigation}) => (
+    <View>
+    <Text>This is home</Text>
+        <Button title='Buddy Up Industry' onPress={() => navigation.navigate('Buddy Up Industry')}> </Button>
+        <Button title='Buddy Up Interest' onPress={() => navigation.navigate('Buddy Up Interest')}> </Button>
+        <Button title='Buddy Up Country' onPress={() => navigation.navigate('Buddy Up Country')}> </Button>
+    </View>
+        
 );
 
 export default Home;
