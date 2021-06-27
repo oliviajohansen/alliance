@@ -190,7 +190,7 @@ export const Industries = [
     data: ["Wholesale Trade"]
   }
 ]
-=======
+
 export const AllianceAcademyData = [
   {
     title: "Weekly Score",
