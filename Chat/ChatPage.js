@@ -39,7 +39,7 @@ export default function ChatPage({ navigation }) {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#f5f5f5",
+    backgroundColor: "#FFFFFF",
     flex: 1,
   },
   listTitle: {

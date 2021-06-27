@@ -19,7 +19,17 @@ import { IconButton } from "react-native-paper";
 const HomeStack = createStackNavigator();
 
 const HomeStackScreen = () => (
-  <HomeStack.Navigator>
+  <HomeStack.Navigator
+    screenOptions={{
+      headerStyle: {
+        backgroundColor: "#D96258",
+      },
+      headerTintColor: "#ffffff",
+      headerTitleStyle: {
+        fontSize: 22,
+      },
+    }}
+  >
     <HomeStack.Screen name="Home" component={Home} />
     <HomeStack.Screen name="Profile" component={Profile} />
     <HomeStack.Screen name="Buddy Up Industry" component={Buddy_up_industry} />
@@ -33,7 +43,17 @@ const HomeStackScreen = () => (
 const ProfileStack = createStackNavigator();
 
 const ProfileStackScreen = () => (
-  <ProfileStack.Navigator>
+  <ProfileStack.Navigator
+    screenOptions={{
+      headerStyle: {
+        backgroundColor: "#D96258",
+      },
+      headerTintColor: "#ffffff",
+      headerTitleStyle: {
+        fontSize: 22,
+      },
+    }}
+  >
     <ProfileStack.Screen name="Profile" component={Profile} />
   </ProfileStack.Navigator>
 );
@@ -73,7 +93,17 @@ const ChatStackScreen = () => (
 const MoreStack = createStackNavigator();
 
 const MoreStackScreen = () => (
-  <MoreStack.Navigator>
+  <MoreStack.Navigator
+    screenOptions={{
+      headerStyle: {
+        backgroundColor: "#D96258",
+      },
+      headerTintColor: "#ffffff",
+      headerTitleStyle: {
+        fontSize: 22,
+      },
+    }}
+  >
     <MoreStack.Screen name="More" component={More} />
   </MoreStack.Navigator>
 );
@@ -106,7 +136,7 @@ export default function App() {
           },
         })}
         tabBarOptions={{
-          activeTintColor: "tomato",
+          activeTintColor: "#D96258",
           inactiveTintColor: "gray",
         }}
       >
