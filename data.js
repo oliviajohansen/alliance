@@ -2,22 +2,25 @@ export const ChatPageData = [
   {
     id: "1",
     name: "Sarah Lee",
-    description: "How are you doing?",
+    description:
+      "Hi Suzan, welcome back! I would love to exchange information on sustainable energy!",
   },
   {
     id: "2",
     name: "Gary Anderson",
-    description: "Brb watch some dark here",
+    description:
+      "Hi Suzan, great to hear that about your interest in electronics. I'll be available next wed 7pm for the video call you mentioned.",
   },
   {
     id: "3",
     name: "Cameron Williamson",
-    description: "Ok!",
+    description:
+      "Hi Suzan :) I enjoy both Korean and Japanese comics! I am currently reading AOT manga",
   },
   {
     id: "4",
     name: "Jane Couper",
-    description: "Thanks! I'll call you there!",
+    description: "Hi Suzan",
   },
 ];
 
@@ -126,70 +129,98 @@ export const ChatRoomData = {
       },
     },
   ],
+  5: [
+    {
+      _id: 0,
+      text: "Buddy Match By Industry: Electronics",
+      createdAt: new Date(2021, 1, 2, 3, 40).getTime(),
+      system: true,
+    },
+  ],
 };
 
 export const Industries = [
   {
     title: "A",
-    data: ["Accountancy", "Aerospace", "Agriculture", "Air Transport", "Architecture"]
+    data: [
+      "Accountancy",
+      "Aerospace",
+      "Agriculture",
+      "Air Transport",
+      "Architecture",
+    ],
   },
   {
     title: "B",
-    data: ["Beauty Services", "Biopharmaceutical Manufacturing", "Built Environment"]
+    data: [
+      "Beauty Services",
+      "Biopharmaceutical Manufacturing",
+      "Built Environment",
+    ],
   },
   {
     title: "C",
-    data: ["Consultancy"]
+    data: ["Consultancy"],
   },
   {
     title: "D",
-    data: ["Design"]
+    data: ["Design"],
   },
   {
     title: "E",
-    data: ["Early Childhood Care and Education", "Electronics", "Energy and Chemicals", "Energy and Power", "Environmental Services"]
+    data: [
+      "Early Childhood Care and Education",
+      "Electronics",
+      "Energy and Chemicals",
+      "Energy and Power",
+      "Environmental Services",
+    ],
   },
   {
     title: "F",
-    data: ["Finance", "Food Manufacturing", "Food Services"]
+    data: ["Finance", "Food Manufacturing", "Food Services"],
   },
   {
     title: "G",
-    data: ["Healthcare", "hotel and Accommodation Services", "Human Resource"]
+    data: ["Healthcare", "hotel and Accommodation Services", "Human Resource"],
   },
   {
     title: "I",
-    data: ["Information and Communications Technology", "Insurance"]
+    data: ["Information and Communications Technology", "Insurance"],
   },
   {
     title: "L",
-    data: ["Landscape", "Legal", "Logistics"]
+    data: ["Landscape", "Legal", "Logistics"],
   },
   {
     title: "M",
-    data: ["Marine and Offshore Engineering", "Media"]
+    data: ["Marine and Offshore Engineering", "Media"],
   },
   {
     title: "P",
-    data: ["Precision Engineering", "Public Service (Education)", "Public Transport"]
+    data: [
+      "Precision Engineering",
+      "Public Service (Education)",
+      "Public Transport",
+    ],
   },
   {
     title: "R",
-    data: ["Real Estate", "Retail"]
+    data: ["Real Estate", "Retail"],
   },
   {
     title: "S",
-    data: ["Sea Transport", "Security", "Social Service"]
+    data: ["Sea Transport", "Security", "Social Service"],
   },
   {
     title: "T",
-    data: ["Tourism", "Training and Adult Education"]
+    data: ["Tourism", "Training and Adult Education"],
   },
   {
     title: "W",
-    data: ["Wholesale Trade"]
-  }
-]
+    data: ["Wholesale Trade"],
+  },
+];
 
 export const AllianceAcademyData = [
   {

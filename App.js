@@ -1,20 +1,20 @@
-import 'react-native-gesture-handler';
-import * as React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import "react-native-gesture-handler";
+import * as React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Ionicons from "react-native-vector-icons/Ionicons";
-import Home from './Home';
-import ChatRoom from './Chat/ChatRoom';
-import ChatPage from './Chat/ChatPage';
-import Profile from './Profile/Profile';
-import More from './More';
-import Buddy_up_industry from './BuddyUp/Buddy_up_industry';
-import Buddy_up_interest from './BuddyUp/Buddy_up_interest';
-import Buddy_up_country from './BuddyUp/Buddy_up_country';
-import Alliance_academy from './AllianceAcademy/Alliance_academy';
-import View_profile from './View_profile';
-import { IconButton } from 'react-native-paper';
+import Home from "./Home";
+import ChatRoom from "./Chat/ChatRoom";
+import ChatPage from "./Chat/ChatPage";
+import Profile from "./Profile/Profile";
+import More from "./More";
+import Buddy_up_industry from "./BuddyUp/Buddy_up_industry";
+import Buddy_up_interest from "./BuddyUp/Buddy_up_interest";
+import Buddy_up_country from "./BuddyUp/Buddy_up_country";
+import Alliance_academy from "./AllianceAcademy/Alliance_academy";
+import View_profile from "./Profile/View_profile";
+import { IconButton } from "react-native-paper";
 
 const HomeStack = createStackNavigator();
 

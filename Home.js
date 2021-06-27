@@ -80,6 +80,7 @@ const Home = ({ navigation }) => (
 
 const styles = StyleSheet.create({
   title: {
+    paddingTop: 10,
     fontWeight: "bold",
     fontSize: 50,
     //backgroundColor: "#F7F7F9",
