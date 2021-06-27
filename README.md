@@ -3,6 +3,8 @@ An all-in-one application that allows users to buddy up, get up to date with Sin
 
 This application aims to help university graduates or working adults who are planning to relocate to Singapore by assisting in their reintegration and assimilation into Singapore's society.
 
+Find out more about our design process [here](files/alliance.pdf).
+
 </br>
 
 ## Main Features
@@ -16,8 +18,9 @@ This application aims to help university graduates or working adults who are pla
   * Understand cultural nuances to avoid misunderstanding
 * Quick Help
   * Access a consolidated list of useful information at a single tap
+ 
+ </br>
   
-  
-## View our prototype
-* [wireframe](https://www.figma.com/proto/ky41oSiZaw9Bv8rR3YFLcK/CodeFiesta-2?node-id=9088%3A100&scaling=scale-down&page-id=9081%3A23)
-* [demo](https://vimeo.com/568128744)
+## View our Prototype
+* [Wireframe](https://www.figma.com/proto/ky41oSiZaw9Bv8rR3YFLcK/CodeFiesta-2?node-id=9088%3A100&scaling=scale-down&page-id=9081%3A23)
+* [Demo](https://vimeo.com/568128744)
