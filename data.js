@@ -128,6 +128,69 @@ export const ChatRoomData = {
   ],
 };
 
+export const Industries = [
+  {
+    title: "A",
+    data: ["Accountancy", "Aerospace", "Agriculture", "Air Transport", "Architecture"]
+  },
+  {
+    title: "B",
+    data: ["Beauty Services", "Biopharmaceutical Manufacturing", "Built Environment"]
+  },
+  {
+    title: "C",
+    data: ["Consultancy"]
+  },
+  {
+    title: "D",
+    data: ["Design"]
+  },
+  {
+    title: "E",
+    data: ["Early Childhood Care and Education", "Electronics", "Energy and Chemicals", "Energy and Power", "Environmental Services"]
+  },
+  {
+    title: "F",
+    data: ["Finance", "Food Manufacturing", "Food Services"]
+  },
+  {
+    title: "G",
+    data: ["Healthcare", "hotel and Accommodation Services", "Human Resource"]
+  },
+  {
+    title: "I",
+    data: ["Information and Communications Technology", "Insurance"]
+  },
+  {
+    title: "L",
+    data: ["Landscape", "Legal", "Logistics"]
+  },
+  {
+    title: "M",
+    data: ["Marine and Offshore Engineering", "Media"]
+  },
+  {
+    title: "P",
+    data: ["Precision Engineering", "Public Service (Education)", "Public Transport"]
+  },
+  {
+    title: "R",
+    data: ["Real Estate", "Retail"]
+  },
+  {
+    title: "S",
+    data: ["Sea Transport", "Security", "Social Service"]
+  },
+  {
+    title: "T",
+    data: ["Tourism", "Training and Adult Education"]
+  },
+  {
+    title: "W",
+    data: ["Wholesale Trade"]
+  }
+]
+=======
 export const AllianceAcademyData = [
   {
     title: "Weekly Score",
