@@ -6,7 +6,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from './Home';
 import ChatRoom from './Chat/ChatRoom';
 import ChatPage from './Chat/ChatPage';
-import Profile from './Profile';
+import Profile from './Profile/Profile';
 import More from './More';
 import Buddy_up_industry from './BuddyUp/Buddy_up_industry';
 import Buddy_up_interest from './BuddyUp/Buddy_up_interest';
