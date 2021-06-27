@@ -3,7 +3,7 @@ import { View, Button, Text } from 'react-native';
 
 const Buddy_up_industry = ({ navigation }) => (
     <View>
-            <Text>This is buddy up industry</Text>
+        <Text>This is buddy up industry</Text>
         <Button title="this is view profile" onPress={() => navigation.navigate('View Profile')}></Button>
     </View>
 );

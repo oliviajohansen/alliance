@@ -4,7 +4,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from './Home';
-import Chat from './Chat';
+import ChatRoom from './Chat/ChatRoom';
+import ChatPage from './Chat/ChatPage';
 import Profile from './Profile';
 import More from './More';
 import Buddy_up_industry from './BuddyUp/Buddy_up_industry';
@@ -12,24 +13,7 @@ import Buddy_up_interest from './BuddyUp/Buddy_up_interest';
 import Buddy_up_country from './BuddyUp/Buddy_up_country';
 import Alliance_academy from './AllianceAcademy/Alliance_academy';
 import View_profile from './View_profile';
-
-const BuddyUpInterestStack = createStackNavigator();
-
-const BuddyUpIndustryStackScreen = () => (
-  <BuddyUpInterestStack.Navigator>
-      <BuddyUpInterestStack.Screen name="Buddy Up Industry" component={Buddy_up_industry} options={{ headerShown: false }} />
-      <BuddyUpInterestStack.Screen name="View Profile" component={View_profile} />
-    </BuddyUpInterestStack.Navigator>
-);
-
-// const BuddyUpIndustryStack = createStackNavigator();
-
-// const BuddyUpIndustryStackScreen = () => (
-//   <BuddyUpIndustryStack.Navigator>
-//       <BuddyUpIndustryStack.Screen name="Buddy Up Industry" component={Buddy_up_industry} />
-//       <BuddyUpIndustryStack.Screen name="View Profile" component={View_profile} />
-//     </BuddyUpIndustryStack.Navigator>
-// )
+import { IconButton } from 'react-native-paper';
 
 const HomeStack = createStackNavigator();
 
@@ -56,8 +40,31 @@ const ProfileStackScreen = () => (
 const ChatStack = createStackNavigator();
 
 const ChatStackScreen = () => (
-    <ChatStack.Navigator>
-      <ChatStack.Screen name="Chat" component={Chat} />
+    <ChatStack.Navigator screenOptions={{
+        headerStyle: {
+          backgroundColor: '#6646ee'
+        },
+        headerTintColor: '#ffffff',
+        headerTitleStyle: {
+          fontSize: 22
+        }
+      }}
+      >
+      <ChatStack.Screen
+        name='Chat Page'
+        component={ChatPage}
+        options={({ navigation }) => ({
+          headerRight: () => (
+            <IconButton
+              icon='message-plus'
+              size={28}
+              color='#ffffff'
+              //onPress={() => navigation.navigate('AddRoom')}
+            />
+          )
+        })}
+      />
+      <ChatStack.Screen name="Chat Room" component={ChatRoom} />
     </ChatStack.Navigator>
 );
 
@@ -66,7 +73,6 @@ const MoreStack = createStackNavigator();
 const MoreStackScreen = () => (
     <MoreStack.Navigator>
       <MoreStack.Screen name="More" component={More} />
-      <MoreStack.Screen name="Chat" component={Chat} />
     </MoreStack.Navigator>
 );
 
