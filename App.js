@@ -10,7 +10,26 @@ import More from './More';
 import Buddy_up_industry from './BuddyUp/Buddy_up_industry';
 import Buddy_up_interest from './BuddyUp/Buddy_up_interest';
 import Buddy_up_country from './BuddyUp/Buddy_up_country';
+import Alliance_academy from './AllianceAcademy/Alliance_academy';
+import View_profile from './View_profile';
 
+const BuddyUpInterestStack = createStackNavigator();
+
+const BuddyUpIndustryStackScreen = () => (
+  <BuddyUpInterestStack.Navigator>
+      <BuddyUpInterestStack.Screen name="Buddy Up Industry" component={Buddy_up_industry} options={{ headerShown: false }} />
+      <BuddyUpInterestStack.Screen name="View Profile" component={View_profile} />
+    </BuddyUpInterestStack.Navigator>
+);
+
+// const BuddyUpIndustryStack = createStackNavigator();
+
+// const BuddyUpIndustryStackScreen = () => (
+//   <BuddyUpIndustryStack.Navigator>
+//       <BuddyUpIndustryStack.Screen name="Buddy Up Industry" component={Buddy_up_industry} />
+//       <BuddyUpIndustryStack.Screen name="View Profile" component={View_profile} />
+//     </BuddyUpIndustryStack.Navigator>
+// )
 
 const HomeStack = createStackNavigator();
 
@@ -21,6 +40,8 @@ const HomeStackScreen = () => (
       <HomeStack.Screen name="Buddy Up Industry" component={Buddy_up_industry} />
       <HomeStack.Screen name="Buddy Up Interest" component={Buddy_up_interest} />
       <HomeStack.Screen name="Buddy Up Country" component={Buddy_up_country} />
+      <HomeStack.Screen name="Alliance Academy" component={Alliance_academy} />
+      <HomeStack.Screen name="View Profile" component={View_profile} />
     </HomeStack.Navigator>
 );
 
@@ -32,12 +53,12 @@ const ProfileStackScreen = () => (
     </ProfileStack.Navigator>
 );
 
-const Chattack = createStackNavigator();
+const ChatStack = createStackNavigator();
 
 const ChatStackScreen = () => (
-    <Chattack.Navigator>
-      <Chattack.Screen name="Chat" component={Chat} />
-    </Chattack.Navigator>
+    <ChatStack.Navigator>
+      <ChatStack.Screen name="Chat" component={Chat} />
+    </ChatStack.Navigator>
 );
 
 const MoreStack = createStackNavigator();
