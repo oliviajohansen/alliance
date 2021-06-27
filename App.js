@@ -18,82 +18,102 @@ import { IconButton } from 'react-native-paper';
 const HomeStack = createStackNavigator();
 
 const HomeStackScreen = () => (
-    <HomeStack.Navigator>
-      <HomeStack.Screen name="Home" component={Home} />
-      <HomeStack.Screen name="Profile" component={Profile} />
-      <HomeStack.Screen name="Buddy Up Industry" component={Buddy_up_industry} />
-      <HomeStack.Screen name="Buddy Up Interest" component={Buddy_up_interest} />
-      <HomeStack.Screen name="Buddy Up Country" component={Buddy_up_country} />
-      <HomeStack.Screen name="Alliance Academy" component={Alliance_academy} />
-      <HomeStack.Screen name="View Profile" component={View_profile} />
-    </HomeStack.Navigator>
+  <HomeStack.Navigator>
+    <HomeStack.Screen name="Home" component={Home} />
+    <HomeStack.Screen name="Profile" component={Profile} />
+    <HomeStack.Screen name="Buddy Up Industry" component={Buddy_up_industry} />
+    <HomeStack.Screen name="Buddy Up Interest" component={Buddy_up_interest} />
+    <HomeStack.Screen name="Buddy Up Country" component={Buddy_up_country} />
+    <HomeStack.Screen name="Alliance Academy" component={Alliance_academy} />
+    <HomeStack.Screen name="View Profile" component={View_profile} />
+  </HomeStack.Navigator>
 );
 
 const ProfileStack = createStackNavigator();
 
 const ProfileStackScreen = () => (
-    <ProfileStack.Navigator>
-      <ProfileStack.Screen name="Profile" component={Profile} />
-    </ProfileStack.Navigator>
+  <ProfileStack.Navigator>
+    <ProfileStack.Screen name="Profile" component={Profile} />
+  </ProfileStack.Navigator>
 );
 
 const ChatStack = createStackNavigator();
 
 const ChatStackScreen = () => (
-    <ChatStack.Navigator screenOptions={{
-        headerStyle: {
-          backgroundColor: '#6646ee'
-        },
-        headerTintColor: '#ffffff',
-        headerTitleStyle: {
-          fontSize: 22
-        }
-      }}
-      >
-      <ChatStack.Screen
-        name='Chat Page'
-        component={ChatPage}
-        options={({ navigation }) => ({
-          headerRight: () => (
-            <IconButton
-              icon='message-plus'
-              size={28}
-              color='#ffffff'
-              //onPress={() => navigation.navigate('AddRoom')}
-            />
-          )
-        })}
-      />
-      <ChatStack.Screen name="Chat Room" component={ChatRoom} />
-    </ChatStack.Navigator>
+  <ChatStack.Navigator
+    screenOptions={{
+      headerStyle: {
+        backgroundColor: "#D96258",
+      },
+      headerTintColor: "#ffffff",
+      headerTitleStyle: {
+        fontSize: 22,
+      },
+    }}
+  >
+    <ChatStack.Screen
+      name="Chat Page"
+      component={ChatPage}
+      options={({ navigation }) => ({
+        headerRight: () => (
+          <IconButton
+            icon="message-plus"
+            size={28}
+            color="#ffffff"
+            //onPress={() => navigation.navigate('AddRoom')}
+          />
+        ),
+      })}
+    />
+    <ChatStack.Screen name="Chat Room" component={ChatRoom} />
+  </ChatStack.Navigator>
 );
 
 const MoreStack = createStackNavigator();
 
 const MoreStackScreen = () => (
-    <MoreStack.Navigator>
-      <MoreStack.Screen name="More" component={More} />
-    </MoreStack.Navigator>
+  <MoreStack.Navigator>
+    <MoreStack.Screen name="More" component={More} />
+  </MoreStack.Navigator>
 );
 
 export default function App() {
-const Stack = createStackNavigator();
-const Tab = createBottomTabNavigator();
+  const Stack = createStackNavigator();
+  const Tab = createBottomTabNavigator();
 
   return (
-<NavigationContainer>
-<Tab.Navigator>
-      <Tab.Screen name="Home" component={HomeStackScreen} />
-      <Tab.Screen name="Chat" component={ChatStackScreen} />
-      <Tab.Screen name="Profile" component={ProfileStackScreen} />      
-      <Tab.Screen name="More" component={MoreStackScreen} />
-   </Tab.Navigator>
-      {/* <Stack.Navigator initialRouteName="Home">
-        <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="Chat" component={Chat} />
-        <Stack.Screen name="Profile" component={Profile} />
-        <Stack.Screen name="More" component={More} />
-      </Stack.Navigator> */}
-</NavigationContainer>
-      );
+    <NavigationContainer>
+      <Tab.Navigator
+        screenOptions={({ route }) => ({
+          tabBarIcon: ({ focused, size }) => {
+            let iconName;
+
+            if (route.name === "Home") {
+              iconName = focused
+                ? "ios-information-circle"
+                : "ios-information-circle-outline";
+            } else if (route.name === "More") {
+              iconName = focused ? "ios-list" : "ios-list-outline";
+            } else if (route.name === "Chat") {
+              iconName = focused ? "ios-chatbox" : "ios-chatbox-outline";
+            } else {
+              iconName = focused ? "ios-person" : "ios-person-outline";
+            }
+
+            // You can return any component that you like here!
+            return <Ionicons name={iconName} size={size} color={"#D96258"} />;
+          },
+        })}
+        tabBarOptions={{
+          activeTintColor: "tomato",
+          inactiveTintColor: "gray",
+        }}
+      >
+        <Tab.Screen name="Home" component={HomeStackScreen} />
+        <Tab.Screen name="Chat" component={ChatStackScreen} />
+        <Tab.Screen name="Profile" component={ProfileStackScreen} />
+        <Tab.Screen name="More" component={MoreStackScreen} />
+      </Tab.Navigator>
+    </NavigationContainer>
+  );
 }

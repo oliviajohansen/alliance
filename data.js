@@ -1,59 +1,59 @@
 export const ChatPageData = [
-    {
-        id: '1',
-        name: "Sarah Lee",
-        description: "How are you doing?"
-    },
-    {
-        id: '2',
-        name: "Gary Anderson",
-        description: "Brb watch some dark here"
-    },
-    {
-        id: '3',
-        name: 'Cameron Williamson',
-        description: 'Ok!'
-    },
-    {
-        id: '4',
-        name: 'Jane Couper',
-        description: "Thanks! I'll call you there!"
-    }
+  {
+    id: "1",
+    name: "Sarah Lee",
+    description: "How are you doing?",
+  },
+  {
+    id: "2",
+    name: "Gary Anderson",
+    description: "Brb watch some dark here",
+  },
+  {
+    id: "3",
+    name: "Cameron Williamson",
+    description: "Ok!",
+  },
+  {
+    id: "4",
+    name: "Jane Couper",
+    description: "Thanks! I'll call you there!",
+  },
 ];
 
 export const ChatRoomData = {
-    1: [
+  1: [
     {
       _id: 0,
-      text: 'New room created.',
+      text: "New room created.",
       createdAt: new Date(2021, 1, 2, 3, 40).getTime(),
-      system: true
+      system: true,
     },
     {
       _id: 1,
-      text: 'Hi Sarah I saw that you are from SPS. I am a Singaporean university graduate from London and am looking to join the same industry. I was wondering if we could connect to discuss more about sustainable energy in Singapore',
+      text: "Hi Sarah I saw that you are from SPS. I am a Singaporean university graduate from London and am looking to join the same industry. I was wondering if we could connect to discuss more about sustainable energy in Singapore",
       createdAt: new Date(2021, 1, 2, 3, 45).getTime(),
       user: {
         _id: 1,
-        name: 'Suzan Winterson'
-      }
+        name: "Suzan Winterson",
+      },
     },
     {
       _id: 2,
-      text: 'Hi Suzan, welcome back! I would love to exchange information on sustainable energy!',
+      text: "Hi Suzan, welcome back! I would love to exchange information on sustainable energy!",
       createdAt: new Date(2021, 1, 2, 3, 50).getTime(),
       user: {
         _id: 2,
-        name: 'Sarah Lee'
-      }
-    }
+        name: "Sarah Lee",
+      },
+    },
   ],
   2: [
     {
       _id: 0,
-      text: 'Buddy Match By Industry: Electronics.',
+      text: "Buddy Match By Industry: Electronics.",
       createdAt: new Date(2021, 4, 3, 9, 10).getTime(),
-      system: true
+      system: true,
     },
     {
       _id: 1,
@@ -61,8 +61,8 @@ export const ChatRoomData = {
       createdAt: new Date(2021, 4, 3, 9, 11).getTime(),
       user: {
         _id: 1,
-        name: 'Suzan Winterson'
-      }
+        name: "Suzan Winterson",
+      },
     },
     {
       _id: 2,
@@ -70,61 +70,61 @@ export const ChatRoomData = {
       createdAt: new Date(2021, 4, 3, 9, 20).getTime(),
       user: {
         _id: 2,
-        name: 'Gary Anderson'
-      }
-    }
+        name: "Gary Anderson",
+      },
+    },
   ],
   3: [
     {
       _id: 0,
-      text: 'Buddy Match By Interest: Music, Reading.',
+      text: "Buddy Match By Interest: Music, Reading.",
       createdAt: new Date(2021, 7, 12, 12, 0).getTime(),
-      system: true
+      system: true,
     },
     {
       _id: 1,
-      text: 'Hi Cameron! I am a Singaporean university graduate from London and am looking to rebuild my circle of friends in Singapore. What type of books do you read? I enjoy reading Japanese Manga',
+      text: "Hi Cameron! I am a Singaporean university graduate from London and am looking to rebuild my circle of friends in Singapore. What type of books do you read? I enjoy reading Japanese Manga",
       createdAt: new Date(2021, 7, 12, 2, 0).getTime(),
       user: {
         _id: 1,
-        name: 'Suzan Winterson'
-      }
+        name: "Suzan Winterson",
+      },
     },
     {
       _id: 2,
-      text: 'Hi Suzan :) I enjoy both Korean and Japanese comics! I am currently reading AOT manga',
+      text: "Hi Suzan :) I enjoy both Korean and Japanese comics! I am currently reading AOT manga",
       createdAt: new Date(2021, 7, 12, 2, 30).getTime(),
       user: {
         _id: 2,
-        name: 'Cameron Williamson'
-      }
-    }
+        name: "Cameron Williamson",
+      },
+    },
   ],
   4: [
     {
       _id: 0,
-      text: 'New Room Created',
+      text: "New Room Created",
       createdAt: new Date(2021, 7, 12, 12, 0).getTime(),
-      system: true
+      system: true,
     },
     {
       _id: 1,
-      text: 'Hi Jane',
+      text: "Hi Jane",
       createdAt: new Date(2021, 7, 12, 12, 30).getTime(),
       user: {
         _id: 1,
-        name: 'Suzan Winterson'
-      }
+        name: "Suzan Winterson",
+      },
     },
     {
       _id: 2,
-      text: 'Hi Suzan',
+      text: "Hi Suzan",
       createdAt: new Date(2021, 7, 12, 12, 35).getTime(),
       user: {
         _id: 2,
-        name: 'Jane Couper'
-      }
-    }
+        name: "Jane Couper",
+      },
+    },
   ],
 };
 
@@ -190,3 +190,131 @@ export const Industries = [
     data: ["Wholesale Trade"]
   }
 ]
+=======
+export const AllianceAcademyData = [
+  {
+    title: "Weekly Score",
+    data: ["2,000/10,000"],
+  },
+  {
+    title: "Classes in Progress",
+    data: ["Singlish for Beginners", "Malay Culture"],
+  },
+  {
+    title: "Reccomended Classes",
+    data: ["Common Customs and Practices", "Hokkien for Beginners"],
+  },
+  {
+    title: "Weekly Leader Board",
+    data: ["Sarah Lee", "Sophie Vane"],
+  },
+];
+
+export const BuddyUpIndustryData = [
+  {
+    id: 1,
+    name: "Annette Black",
+    common: "Electronics",
+  },
+  {
+    id: 2,
+    name: "Sarah Lee",
+    common: "Electronics",
+  },
+  {
+    id: 3,
+    name: "Tan Wei Liang",
+    common: "Informatioin & Communications Technology",
+  },
+  {
+    id: 4,
+    name: "Jane Cooper",
+    common: "Informatioin & Communications Technology",
+  },
+  {
+    id: 5,
+    name: "Lim Hui Qing",
+    common: "Informatioin & Communications Technology",
+  },
+  {
+    id: 6,
+    name: "Jacob Jones",
+    common: "Energy and Power",
+  },
+];
+
+export const BuddyUpInterestData = [
+  {
+    id: 1,
+    name: "Annette Black",
+    common: "Music, Reading, Sports, Video Editing",
+  },
+  {
+    id: 2,
+    name: "Sarah Lee",
+    common: "Art, Music, Reading, Sports, Video Editing",
+  },
+  {
+    id: 3,
+    name: "Cameron Williamson",
+    common: "Art, Music, Reading, Sports, Video Editing",
+  },
+  {
+    id: 4,
+    name: "Tan Wei Liang",
+    common: "Blogging, Music, Reading, Sports, Video Editing",
+  },
+  {
+    id: 5,
+    name: "Lim Hui Qing",
+    common: "Blogging, Music, Reading, Sports, Video Editing",
+  },
+  {
+    id: 6,
+    name: "Jacob Jones",
+    common: "Music, Sports, Video Editing",
+  },
+  {
+    id: 7,
+    name: "Sophia Vane",
+    common: "Art Blogging, Music, Reading",
+  },
+];
+
+export const BuddyUpCountryData = [
+  {
+    id: 1,
+    name: "Annette Black",
+    common: "France",
+  },
+  {
+    id: 2,
+    name: "Gary Anderson",
+    common: "France",
+  },
+  {
+    id: 3,
+    name: "Cameron Williamson",
+    common: "France",
+  },
+  {
+    id: 4,
+    name: "Jane Cooper",
+    common: "Amsterdam",
+  },
+  {
+    id: 5,
+    name: "Brena Smily",
+    common: "Germany",
+  },
+  {
+    id: 6,
+    name: "Jacob Jones",
+    common: "Italy",
+  },
+  {
+    id: 7,
+    name: "Sophia Vane",
+    common: "Italy",
+  },
+];
