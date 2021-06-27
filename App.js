@@ -8,7 +8,7 @@ import Home from "./Home";
 import ChatRoom from "./Chat/ChatRoom";
 import ChatPage from "./Chat/ChatPage";
 import Profile from "./Profile/Profile";
-import More from "./More";
+import QuickHelp from './QuickHelp/QuickHelp';
 import Buddy_up_industry from "./BuddyUp/Buddy_up_industry";
 import Buddy_up_interest from "./BuddyUp/Buddy_up_interest";
 import Buddy_up_country from "./BuddyUp/Buddy_up_country";
@@ -90,10 +90,10 @@ const ChatStackScreen = () => (
   </ChatStack.Navigator>
 );
 
-const MoreStack = createStackNavigator();
+const QuickHelpStack = createStackNavigator();
 
-const MoreStackScreen = () => (
-  <MoreStack.Navigator
+const QuickHelpStackScreen = () => (
+  <QuickHelpStack.Navigator
     screenOptions={{
       headerStyle: {
         backgroundColor: "#D96258",
@@ -104,8 +104,8 @@ const MoreStackScreen = () => (
       },
     }}
   >
-    <MoreStack.Screen name="More" component={More} />
-  </MoreStack.Navigator>
+    <QuickHelpStack.Screen name="More" component={QuickHelp} />
+  </QuickHelpStack.Navigator>
 );
 
 export default function App() {
@@ -143,7 +143,7 @@ export default function App() {
         <Tab.Screen name="Home" component={HomeStackScreen} />
         <Tab.Screen name="Chat" component={ChatStackScreen} />
         <Tab.Screen name="Profile" component={ProfileStackScreen} />
-        <Tab.Screen name="More" component={MoreStackScreen} />
+        <Tab.Screen name="More" component={QuickHelpStackScreen} />
       </Tab.Navigator>
     </NavigationContainer>
   );
