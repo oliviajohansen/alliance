@@ -1,28 +1,28 @@
 export const ChatPageData = [
-    {
-        id: '1',
-        name: "Sarah Lee",
-        description: "How are you doing?"
-    },
-    {
-        id: '2',
-        name: "Gary Anderson",
-        description: "Brb watch some dark here"
-    },
-    {
-        id: '3',
-        name: 'Cameron Williamson',
-        description: 'Ok!'
-    },
-    {
-        id: '4',
-        name: 'Jane Couper',
-        description: "Thanks! I'll call you there!"
-    }
+  {
+    id: '1',
+    name: "Sarah Lee",
+    description: "How are you doing?"
+  },
+  {
+    id: '2',
+    name: "Gary Anderson",
+    description: "Brb watch some dark here"
+  },
+  {
+    id: '3',
+    name: 'Cameron Williamson',
+    description: 'Ok!'
+  },
+  {
+    id: '4',
+    name: 'Jane Couper',
+    description: "Thanks! I'll call you there!"
+  }
 ];
 
 export const ChatRoomData = {
-    1: [
+  1: [
     {
       _id: 0,
       text: 'New room created.',
@@ -127,3 +127,22 @@ export const ChatRoomData = {
     }
   ],
 };
+
+export const AllianceAcademyData = [
+  {
+    title: "Weekly Score",
+    data: ["2,000/10,000"]
+  },
+  {
+    title: "Classes in Progress",
+    data: ["Singlish for Beginners", "Malay Culture"]
+  },
+  {
+    title: "Reccomended Classes",
+    data: ["Common Customs and Practices", "Hokkien for Beginners"]
+  },
+  {
+    title: "Weekly Leader Board",
+    data: ["Sarah Lee", "Sophie Vane"]
+  }
+];
