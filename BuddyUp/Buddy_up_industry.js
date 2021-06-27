@@ -15,9 +15,7 @@ const Buddy_up_industry = ({ navigation }) => {
     <View style={styles.container}>
       <View style={styles.header}>
         <Image
-          source={{
-            uri: "https://eriehouse.org/wp-content/uploads/2020/02/SW-Headshot-e1582832304774.jpg",
-          }}
+          source={require("../assets/Profile.png")}
           style={styles.profilePic}
         />
         <View style={styles.line} />
@@ -35,7 +33,9 @@ const Buddy_up_industry = ({ navigation }) => {
         ItemSeparatorComponent={() => <Divider />}
         renderItem={({ item }) => (
           <TouchableOpacity
-          //onPress={() => navigation.navigate('Chat Room', { roomId: item.id })}
+            onPress={() =>
+              navigation.navigate("View Profile", { username: item.name })
+            }
           >
             <List.Item
               title={item.name}
@@ -78,7 +78,7 @@ const Buddy_up_industry = ({ navigation }) => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#f5f5f5",
+    backgroundColor: "#FFFFFF",
     flex: 1,
     padding: 10,
   },
