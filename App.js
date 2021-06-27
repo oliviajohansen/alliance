@@ -3,6 +3,7 @@ import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import Ionicons from "react-native-vector-icons/Ionicons";
 import Home from './Home';
 import ChatRoom from './Chat/ChatRoom';
 import ChatPage from './Chat/ChatPage';
