@@ -15,9 +15,7 @@ const Buddy_up_interest = ({ navigation }) => {
     <View style={styles.container}>
       <View style={styles.header}>
         <Image
-          source={{
-            uri: "https://eriehouse.org/wp-content/uploads/2020/02/SW-Headshot-e1582832304774.jpg",
-          }}
+          source={require("../assets/Profile.png")}
           style={styles.profilePic}
         />
         <View style={styles.line} />
@@ -78,7 +76,7 @@ const Buddy_up_interest = ({ navigation }) => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#f5f5f5",
+    backgroundColor: "#FFFFFF",
     flex: 1,
     padding: 10,
   },

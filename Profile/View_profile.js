@@ -1,20 +1,22 @@
 import React, { useState } from "react";
 import { Button, Image, View, StyleSheet, Text, TextInput } from "react-native";
-import IndustryList from "./IndustryList";
 
-const Profile = ({ navigation }) => {
-  const [name, setName] = useState("Suzan Winterson");
+const View_Profile = ({ route, navigation }) => {
+  const { username } = route.params;
+  const [name, setName] = useState(username);
   const [country, setCountry] = useState("");
-  const [bio, setBio] = useState("Today is a better day");
+  const [bio, setBio] = useState("");
   const [industry, setIndustry] = useState("");
   const [interests, setInterests] = useState("");
 
   return (
-    <View style={styles.white}>
+    <View>
       <View style={styles.container}>
         <Image
           style={styles.profilePic}
-          source={require("../assets/Profile.png")}
+          source={{
+            uri: "https://miro.medium.com/max/2560/1*Ar1FqCuQ6sMSWWDYcN7n2Q.jpeg",
+          }}
         ></Image>
       </View>
       <View style={styles.container}>
@@ -24,6 +26,7 @@ const Profile = ({ navigation }) => {
             style={styles.field}
             onChangeText={(text) => setName(text)}
             defaultValue={name}
+            editable={false}
           />
         </View>
         <View>
@@ -33,6 +36,7 @@ const Profile = ({ navigation }) => {
             onChangeText={(text) => setCountry(text)}
             placeholder="Select your country"
             defaultValue={country}
+            editable={false}
           />
           {/* <IndustryList /> */}
         </View>
@@ -42,6 +46,7 @@ const Profile = ({ navigation }) => {
             style={styles.field}
             onChangeText={(text) => setBio(text)}
             defaultValue={bio}
+            editable={false}
           />
         </View>
         <View>
@@ -51,6 +56,7 @@ const Profile = ({ navigation }) => {
             onChangeText={(text) => setIndustry(text)}
             placeholder="Select your industry"
             defaultValue={industry}
+            editable={false}
           />
         </View>
         <View>
@@ -60,10 +66,15 @@ const Profile = ({ navigation }) => {
             onChangeText={(text) => setInterests(text)}
             placeholder="Select your interests"
             defaultValue={interests}
+            editable={false}
           />
         </View>
         <View style={styles.complete}>
-          <Button color="#fff" title="Complete" />
+          <Button
+            onPress={() => navigation.navigate("Chat", { screen: "Chat Room" })}
+            color="#fff"
+            title="Buddy Up"
+          />
         </View>
       </View>
     </View>
@@ -97,6 +108,7 @@ const styles = StyleSheet.create({
   profilePic: {
     height: 200,
     width: 200,
+    borderRadius: 100,
   },
   complete: {
     backgroundColor: "#D96258",
@@ -104,11 +116,7 @@ const styles = StyleSheet.create({
     borderColor: "#D96258",
     width: 300,
     height: 40,
-    marginBottom: 80,
-  },
-  white: {
-    backgroundColor: "#FFFFFF",
   },
 });
 
-export default Profile;
+export default View_Profile;

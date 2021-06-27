@@ -24,9 +24,7 @@ const Alliance_academy = () => (
       <Text style={styles.name}>Suzan Winterson</Text>
       <Image
         style={styles.tinyLogo}
-        source={{
-          uri: "https://eriehouse.org/wp-content/uploads/2020/02/SW-Headshot-e1582832304774.jpg",
-        }}
+        source={require("../assets/Profile.png")}
         style={styles.profilePic}
       />
     </View>
